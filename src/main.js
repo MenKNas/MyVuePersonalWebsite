@@ -13,6 +13,7 @@ import ContactMe from './components/ContactMe.vue';
 import Blog from './components/Blog.vue';
 import Page404 from './components/Page404.vue';
 import ThankYou from './components/ThankYou.vue';
+import ArticleOfTheWeek from './components/ArticleOfTheWeek.vue';
 // import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 
 Vue.use(Vuetify);

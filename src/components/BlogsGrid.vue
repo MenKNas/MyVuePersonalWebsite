@@ -15,13 +15,15 @@
                             <span> <router-link to="FindTopics"> <a> Find Topics </a> </router-link> </span>
                         </app-header>
                     </transition>
+                    <hr id="headerDiv">
+                     <h1 class="mainheading mb-5 mt-2"> Expand your knowledge <i style="font-size:15px; color:#16a085;" class="fas fa-circle"></i> <br> Read  </h1>
 			 <section style="background-size: cover; background-position: center center" class="hero">
                 <div class="container">
                     <div class="row">
                     <div class="col-lg-7">
                         <h1> Welcome to the Blogs Grid </h1> <router-link class="hero-link" to="/MyBlog"> <a> Read Here </a></router-link>
                     </div>
-                    </div><a href="#" class="continue link-scroll"><i class="fas fa-arrow-down"></i> Scroll Down</a>
+                    </div>
                 </div>
             </section>
 
@@ -39,6 +41,7 @@
                                     <router-link class="btn articles-button" to="#"> <a> See all articles </a></router-link>
                                     <router-link class="btn articles-button" to="#"> <a> Find By Category </a></router-link>
                                     <router-link class="btn articles-button" to="#"> <a> Article of the Week </a></router-link>
+                                    <a class="btn articles-button" href="#dailyNewsFeed"> Daily News Feed </a>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +56,9 @@
             <div class="col-sm-12 col-md-4 col-lg-4 featured-articles">
                 <h3> Featured Articles </h3>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-12">
+            <div id="dailyNewsFeed" class="col-sm-12 col-md-12 col-lg-12">
+              <h1 class="mainheading mb-5 mt-5"> Get the latest news <i style="font-size:15px; color:#16a085;" class="fas fa-circle"></i> <br> Stay informed </h1>
+              <h3 class="text-center mt-2 mb-5"> Your daily News Feed </h3>
                 <news-list></news-list>
             </div>
 		</div><!-- row -->
@@ -367,5 +372,9 @@ section.newsletter .submit:hover {
   100% {
     transform: translateX(23px);
   }
+}
+
+#headerDiv{
+  border:0.4px solid #16a074;
 }
 </style>

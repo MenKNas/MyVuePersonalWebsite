@@ -1,100 +1,45 @@
 <template>
-    <div class="container">
-		<div class="page-wrap" id="root">
-             <div class="col-lg-12 col-md-12 text-center">
-                    <transition name="leftMove" type="animation">
-                        <app-header>
-                            <span> <router-link to="/MyBlog"> <a> My Blog </a> </router-link> </span>
-                            <span> <router-link to="/MyPortfolio"> <a> My Portfolio </a> </router-link> </span>
-                            <span> <router-link to="/"> <a> Home </a> </router-link> </span>
-                            <span> <router-link to="AboutMe"> <a> About Me </a> </router-link> </span>
-                            <span> </span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span> <a href=""> Become a writer </a> </span>
-                            <span> <router-link to="FindTopics"> <a> Find Topics </a> </router-link> </span>
-                        </app-header>
-                    </transition>
-                </div>
-
-			<!-- Content-->
-			<div class="wil-content mt-5">
-
-				<!-- Section -->
-				<section class="awe-section">
-					<div class="container">
-
-						<!-- page-title -->
-						<div class="page-title pb-40">
-							<h2 class="page-title__title">Get in touch</h2>
-							<p class="page-title__text">  Feel free to contact me about anything.<br> <img id="hand-shake" src="../assets/img/icons/hand-shake.png" alt=""> If you want to contact me for an interview please
-                            use "Employment" as a subject for your message.
-                            </p>
-							<div class="page-title__divider"></div>
-						</div><!-- End / page-title -->
-
-					</div>
-				</section>
-				<!-- End / Section -->
-                <div class="container m-3">
-                    <div class="row">
-                        <ul class="nav nav-pills">
-                            <div class="col-sm-6-col-md-6">
-                                <li class="nav-item">
-                                <button @click="currentComponent ='contact-form'" class="btn tabLink"> Contact Form </button>
-                            </li>
-                            </div>
-                            <div class="col-sm-6 col-md-6">
-                                <li class="nav-item">
-                                <button @click="currentComponent = 'social-media'" class="btn tabLink"> Social Media <span class="p-1"> <i class="fab fa-reddit"></i></span>  </button>
-                            </li>
-                            </div>
-
-                        </ul>
+    <div>
+         <div id="headerwrap">
+            <div class="container">
+                <div class="row">
+                    <!-- <button id="headerButton" @mouseenter="showMenu"> {{menuText}} </button> -->
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <transition name="leftMove" type="animation">
+                            <app-header>
+                                <span> <router-link to="MyBlog"> <a> My Blog </a> </router-link> </span>
+                                <span> <router-link to="/MyPortfolio"> <a> MyPortfolio </a> </router-link> </span>
+                                <span> <router-link to="/ContactMe"> <a> Contact Me </a> </router-link> </span>
+                                <span> <router-link to="/"> <a> Home </a> </router-link> </span>
+                                <span> </span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span> <a href="#"> Become a writer </a> </span>
+                                <span> <router-link to="FindTopics"> <a> Find Topics </a> </router-link> </span>
+                            </app-header>
+                        </transition>
                     </div>
                 </div>
-
-                <keep-alive>
-				    <component :is="currentComponent"> </component>
-				</keep-alive>
-
-				<!-- End / Section -->
-			</div>
-			<!-- End / Content-->
-		</div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="mainsub-heading"> Hey there, <br> My name is Menelaos Nasies </h2>
+                        <h2 class="mainsub-heading2"> <p> I am a Web Developer, Graphic Designer, Photographer and Blogger <br> <button class="btn btn-green btn-left" @click="workWithMe"> Work with me </button>
+                        <button @click="viewMyWork" class="btn btn-green btn-right"> View my work </button> </p></h2>
+                    </div>
+                </div><!-- row -->
+            </div><!-- /container -->
+	    </div><!-- /headerwrap -->
     </div>
 </template>
 
 <script>
-import Header from "./Header.vue";
-import ContactForm from "./ContactForm.vue";
-import SocialMedia from "./SocialMedia.vue";
-
-export default {
-  data() {
-    return {
-      currentComponent: this.$route.query.activeComponent
-        ? this.$route.query.activeComponent
-        : SocialMedia,
-      activeContactClass:'',
-      mediaActive:true   
-    };
-  },
-  components: {
-    appHeader: Header,
-    contactForm: ContactForm,
-    socialMedia: SocialMedia
-  },
-  methods: {
-    loadComponent() {
-      if (currentComponent === "contact-form") {
-      } else return "contact-form";
+    export default {
+        
     }
-  }
-};
 </script>
+
 
 <style scoped>
 #root {

@@ -16,7 +16,7 @@
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                <span> <a href=""> Become a writer </a> </span>
+                                <span> <a href="#"> Become a writer </a> </span>
                                 <span> <router-link to="FindTopics"> <a> Find Topics </a> </router-link> </span>
                             </app-header>
                         </transition>
@@ -53,8 +53,10 @@
                          </p>
                     </div>
                 </div><!-- row -->
+                </div>
                 <div class="dividerNew">
                 </div>
+                <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-justify">
                        <h2> My education </h2>
@@ -73,10 +75,11 @@
                        </p>
                     </div>
                 </div><!-- row -->
+                </div>
 
                  <div class="dividerNew">
                 </div>
-
+                <div class="container">
                  <div class="row">
                     <div class="col-lg-12 text-justify">
                        <h2> My skills </h2>
@@ -138,12 +141,12 @@
                       </ul>
                     </div>
                   </div>
-
+                </div>
 
 
                 <div class="dividerNew">
                 </div>
-
+                      <div class="container">
                        <div class="row">
                     <div class="col-lg-12 text-justify">
                        <h2> My interests </h2>
@@ -184,31 +187,31 @@
                        </ul>
                     </div>
                 </div><!-- row -->
-
+              </div>
                <div class="dividerNew">
                 </div>
-
-                    <div class="row">
-                    <div class="col-lg-12 text-justify moreAboutMe">
-                       <h2> Get to know me more... </h2>
-                       <hr id="hr1">
-                       <p> <span style="font-weight:500; font-size:135%;"> B</span>eing a restless spirit I don't stop doing things after work. I just keep doing more.  
-                       In this section you can read a short summary of my hobbies and find out more about Menelaos ( no, I don't always talk about myself in 3rd person).
-                       </p>
-                       <ul style="list-style:none;">
-                         <li> <strong>Basketball addict </strong> Used to play in a team as Point Guard. Big fan of LA Lakers and Kobe ( now Lakers and LeBron). NBA is a major part of my after work daily routine.</li>
-                         <li> <strong>Passionate photographer. </strong> I have worked as a photographer professionally, but the love and hobbyist approach of photography will never stop. </li>
-                         <li> <strong>Nature enthusiast. </strong> Nothing better than a walk in the woods or a climb on a mountain. Combine that with the love for photography and you get the most amazing pictures you could ever imagine.</li>
-                         <li> <strong>Video game lover. </strong> (nothing to comment here, just trying to build my own battlestation). </li>
-                         <li> <strong>Reader. </strong> Ah, that feeling of grabbing a book, sitting on the sofa next to the burning fireplace.  </li>
-                         <li> <strong>Coffee freak. </strong> Needless to say, who can code without coffee ? </li>
-                       </ul>
-                       <img class="img me-nature" src="../assets/img/nature-me.png" alt="">
-                       <br>
-                       <p class="mt-2 mb-5"> Me at <a class="text-link" href="https://en.wikipedia.org/wiki/Zagori" target="_blank">Zagori </a> in 2017. </p>
-                    </div>
-                </div><!-- row -->
-
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12 text-justify moreAboutMe">
+                          <h2> Get to know me more... </h2>
+                          <hr id="hr1">
+                          <p> <span style="font-weight:500; font-size:135%;"> B</span>eing a restless spirit I don't stop doing things after work. I just keep doing more.  
+                          In this section you can read a short summary of my hobbies and find out more about Menelaos ( no, I don't always talk about myself in 3rd person).
+                          </p>
+                          <ul style="list-style:none;">
+                            <li> <strong>Basketball addict </strong> Used to play in a team as Point Guard. Big fan of LA Lakers and Kobe ( now Lakers and LeBron). NBA is a major part of my after work daily routine.</li>
+                            <li> <strong>Passionate photographer. </strong> I have worked as a photographer professionally, but the love and hobbyist approach of photography will never stop. </li>
+                            <li> <strong>Nature enthusiast. </strong> Nothing better than a walk in the woods or a climb on a mountain. Combine that with the love for photography and you get the most amazing pictures you could ever imagine.</li>
+                            <li> <strong>Video game lover. </strong> (nothing to comment here, just trying to build my own battlestation). </li>
+                            <li> <strong>Reader. </strong> Ah, that feeling of grabbing a book, sitting on the sofa next to the burning fireplace.  </li>
+                            <li> <strong>Coffee freak. </strong> Needless to say, who can code without coffee ? </li>
+                          </ul>
+                          <img class="img img-fluid me-nature" src="../assets/img/nature-me.png" alt="">
+                          <br>
+                          <p class="mt-2 mb-5"> Me at <a class="text-link" href="https://en.wikipedia.org/wiki/Zagori" target="_blank">Zagori </a> in 2017. </p>
+                        </div>
+                    </div><!-- row -->
+                </div>
 
             </div><!-- /container -->
 	    </div><!-- /headerwrap -->

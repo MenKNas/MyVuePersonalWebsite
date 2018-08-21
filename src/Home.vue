@@ -58,26 +58,26 @@
 	    <!-- </div> container -->
     <!-- </div> portfolio -->
 <!-- SERVICES SECTION -->
-	<div id="services">
-		<div class="container mt-5">
-             <h1 class="mainheading"> I can help you grow <i style="font-size:15px; color:#16a085;" class="fas fa-circle"></i> <br> How?  </h1>
+	<div>
+		<div class="container mt-5 mb-5 services">
+        <h1 class="mainheading mb-5 mt-2"> I can help you grow <i style="font-size:15px; color:#16a085;" class="fas fa-circle"></i> <br> How?  </h1>
 			<div class="row mt text-justify">
-				<div class="col-lg-4 col-sm-12 col-md-12">
+				<div class="col-lg-4 col-sm-12 col-md-6 mb-3">
 					<h3 @mouseover="textValue1 = !textValue1" @mouseout ="textValue1 = !textValue1"> Quality Design & Material </h3>
-					<p v-if="textValue1">Pixel accurate layouts following a mobile first approach,using the latest front-end technologies.
+					<p>Pixel accurate layouts following a mobile first approach,using the latest front-end technologies.
 						Beautiful templates, readable content with the latest typography trends. Adjustable to customers needs.
 						Photography and video coverage the need of your website can be provided.
 					</p>
 				</div>
-				<div class="col-lg-4 col-sm-12 col-md-12">
+				<div class="col-lg-4 col-sm-12 col-md-6 mb-3">
 					<h3 @mouseover="textValue2 = !textValue2" @mouseout ="textValue2 = !textValue2"> Latest Technologies </h3>
-					<p v-if="textValue2"> As you can see at my personal info page, I use the latest technology toolset in the industry. Implementing everything with state of the art cross platform frameworks following the
+					<p> As you can see at my personal info page, I use the latest technology toolset in the industry. Implementing everything with state of the art cross platform frameworks following the
 						most amazing UI/UX trends, able to give your web app a real boost that will absolutely speak to the heart of your clients.
 					</p>
 				</div>
-				<div class="col-lg-4 col-sm-12 col-md-12">
+				<div class="col-lg-4 col-sm-12 col-md-6 mb-3">
 					<h3 @mouseover="textValue3 = !textValue3" @mouseout ="textValue3 = !textValue3">Knowledge Providing</h3>
-					<p v-if="textValue3"> Stay updated with the latest trends in the industry by reading my articles and tutorials. But wait! I don't simply write about Web Technologies.
+					<p> Stay updated with the latest trends in the industry by reading my articles and tutorials. But wait! I don't simply write about Web Technologies.
 						Explore my website to find articles,news and much more content concerning a wide variety of subjects. Main interests include Computer Science,
 					Photography, Machine Learning, Neuroscience, Pyschology, Cosmology and more. </p>
 				</div>
@@ -381,6 +381,13 @@ hr {
   transition: all 0.3s ease;
 }
 
+.services h3{
+  border-bottom:5px solid #16a085;
+  padding:2%;
+}
+
+
+
 #headerwrap {
   background-image: linear-gradient(
       to right bottom,
@@ -389,7 +396,7 @@ hr {
     ),
     url("./assets/img/bg-photo2.jpg");
   margin-top: -10px;
-  margin-bottom: 3%;
+  margin-bottom: 0%;
   padding-top: 20px;
   text-align: center;
   background-attachment: relative;
@@ -415,7 +422,11 @@ hr {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
+  #services {
+    height:150vh;
+    margin-bottom:70%;
+  }
   #services h1.mainheading {
     font-size: 100%;
   }
@@ -436,12 +447,12 @@ hr {
     url("./assets/img/header-bg3.jpg");
   margin-top: 3%;
   margin-bottom: 0%;
-  padding-top: 20px;
+  padding-top: 1%;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
   width: 100%;
-  height: 40vh;
+  height: 23vh;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -451,6 +462,7 @@ hr {
   -o-background-size: cover;
   background-size: cover;
   font-family: Raleway;
+  font-size:30%;
 }
 
 #footer hr {
@@ -460,9 +472,32 @@ hr {
 
 @media only screen and (max-width: 740px) {
   #footer p {
-    font-size: 80%;
+    font-size: 220%;
+  }
+  #footer h5,h6{
+    font-size:220%;
+  }
+  #footer{
+    height:auto;
   }
 }
+
+@media only screen and (max-width: 740px) {
+  #headerwrap{
+    height:auto;
+  }
+  #headerwrap span {
+    width:112%;
+  }
+  #headerwrap span a{
+    height:auto;
+    font-size:90%;
+    display:flex;
+    flex-direction: column;
+    vertical-align: start;
+  }
+}
+
 
 #arrow-down1 {
   animation-delay: 8s;
@@ -624,10 +659,12 @@ hr {
 #services {
   color: black;
   margin: 0 auto;
-  padding: 1%;
-  width: 80%;
-  height: 100vh;
-  border: 15px solid #16a085;
+  padding: 0%;
+  width: 90%;
+  height: 80vh;
+  border-bottom: 15px solid #16a085;
+  
+ 
 }
 
 #blogSection {
@@ -647,7 +684,7 @@ hr {
 #services h3 {
   color: black;
   border-bottom: 1px solid lightgrey;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
@@ -661,7 +698,8 @@ hr {
   color: black;
   animation: moveInLeft2;
   animation-duration: 1.5s;
-  font-weight: 400;
+  font-weight: 300;
+  font-size:100%;
 }
 
 #services i {

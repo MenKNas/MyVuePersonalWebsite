@@ -103,6 +103,10 @@
               <img class="img img-fluid" src="../assets/img/500print-screen.png" alt="">
               </div>
             </div>
+            
+            <div class="divider">
+
+            </div>
 
             <div class="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5 developer-title">
               <h1> <i class="fas fa-terminal"></i> My Developer portfolio </h1>
@@ -145,14 +149,7 @@
             </div>
 
             <div class="note">
-              <h6 class="m-4"> Note: </h6>
-              <p> I consider this website a project of its own, and a pretty much demanding one. It took me more than 2 months to actually get it to its final form (and of course remains a work in progress). 
-                The whole code for the website is written by me (and only me). In case you want to take a look at it, test it or want to contribute please contact me using the
-                website's contact page or send me an email right here:  <a style="color:white; text-decoration:none" href="mailto:men.nasies@gmail.com"> men.nasies@gmail.com </a></p>
-                <p> Main technologies I have used to finish this website are: Vue.js (with the whole Vue ecosystem), Vuex, Bootstrap 4, Animation Libraries, CSS 3, SCSS, HTML 5 and have used various
-                  software for the photo editing part. So for possible future employers, you can consider this website as another personal project of mine. 
-                </p>
-
+              
               
             </div>
 
@@ -489,5 +486,13 @@ SERVICES / INTEGRATIONS
   color:white;
   width:100%;
 }
+
+.divider{
+ background-image:url('../assets/img/homebg.jpg');
+ width:100%;
+ height:30vh;
+ background-size:cover;
+}
+
 
 </style>
